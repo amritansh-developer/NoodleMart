@@ -1,0 +1,111 @@
+body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(120deg, #fff3e0, #ffe0b2);
+      min-height: 100vh;
+    }
+
+    .account-container {
+      max-width: 900px;
+      margin: 80px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+      animation: fadeSlide 1.2s ease;
+    }
+
+    h1 {
+      color: #ff6f00;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #ff6f00;
+      color: white;
+      font-size: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .details p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .details strong {
+      color: #ff6f00;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff3e0;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      transition: 0.4s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      color: #ff6f00;
+      margin-bottom: 10px;
+    }
+
+    .logout {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .logout button {
+      background: #ff3d00;
+      color: white;
+      border: none;
+      padding: 14px 40px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .logout button:hover {
+      background: #d32f2f;
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeSlide {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }

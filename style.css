@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: green;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: green;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#searchBox {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+#searchBox:focus {
+    border-color: green;
+}
+
+.cart-icon {
+    font-size: 20px;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: white;
+    padding: 60px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #555;
+}
+
+/* ===== SHOP CATEGORY PAGE ===== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.products a {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.products a:hover {
+    transform: scale(1.03);
+    background: #f0f0f0;
+}
+
+/* ===== PRODUCT GRID ===== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 25px;
+    padding: 25px;
+}
+
+/* ===== PRODUCT CARD ===== */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* ===== BUTTON ===== */
+button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+/* ===== CART PAGE ===== */
+.cart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 25px;
+    padding: 25px;
+}
+
+/* ===== CART CARD (LIKE PRODUCT GRID) ===== */
+.cart-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cart-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.cart-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cart-card p {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* ===== QUANTITY CONTROL ===== */
+.qty-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.qty-box button {
+    padding: 5px 12px;
+    font-size: 18px;
+    background: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.qty-box span {
+    font-size: 16px;
+    font-weight: bold;
+}

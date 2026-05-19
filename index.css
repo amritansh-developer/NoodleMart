@@ -1,0 +1,187 @@
+ body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(120deg, #fff3e0, #ffe0b2);
+            overflow-x: hidden;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(
+                rgba(255, 111, 0, 0.85),
+                rgba(255, 111, 0, 0.85)
+            ),
+            url("images/noodles-bg.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero-content {
+            animation: fadeUp 1.5s ease;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+
+        .hero button {
+            padding: 14px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #ff6f00;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .hero button:hover {
+            transform: scale(1.1);
+            background: #fff3e0;
+        }
+
+        .features {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 38px;
+            color: #ff6f00;
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+            transition: 0.4s;
+            animation: slideUp 1.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .feature h3 {
+            color: #ff6f00;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #555;
+            font-size: 15px;
+        }
+
+        .brands {
+            background: #ff6f00;
+            color: white;
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .brands h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .brand-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .brand {
+            background: white;
+            color: #ff6f00;
+            padding: 14px 26px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.4s;
+        }
+
+        .brand:hover {
+            transform: scale(1.15);
+        }
+
+        .cta {
+            padding: 70px 15%;
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+            color: #ff6f00;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            font-size: 17px;
+            margin-bottom: 25px;
+            color: #444;
+        }
+
+        .cta a {
+            text-decoration: none;
+            background: #ff6f00;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 35px;
+            font-size: 16px;
+            transition: 0.4s;
+        }
+
+        .cta a:hover {
+            background: #e65c00;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Account | NoodleMart</title>
+  <link rel="stylesheet" href="account.css">
+
+</head>
+
+<body>
+
+  <div class="account-container">
+    <h1>My Account 👤</h1>
+    <p class="subtitle">Manage your profile and account settings</p>
+
+    <div class="profile">
+      <div class="avatar">A</div>
+      <div class="details">
+        <p><strong>Name:</strong> Admin</p>
+        <p><strong>Email:</strong> admin@noodlemart.com</p>
+        <p><strong>Role:</strong> Administrator</p>
+        <p><strong>Account Status:</strong> Active</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <div class="card">
+        <h3>🛒 My Orders</h3>
+        <p>View your past orders and order status.</p>
+      </div>
+
+      <div class="card">
+        <h3>📦 Saved Products</h3>
+        <p>Products added to wishlist (demo).</p>
+      </div>
+
+      <div class="card">
+        <h3>⚙️ Account Settings</h3>
+        <p>Update profile information (demo).</p>
+      </div>
+
+      <div class="card">
+        <h3>🔐 Security</h3>
+        <p>Change password and security options.</p>
+      </div>
+    </div>
+
+    <div class="logout">
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script>
+    function logout() {
+      alert("You have been logged out successfully.");
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+</html>

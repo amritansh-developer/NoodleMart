@@ -1,0 +1,96 @@
+body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(120deg, #fff7e6, #ffe0b2);
+        }
+
+        /* ABOUT SECTION */
+        .about-hero {
+            text-align: center;
+            padding: 80px 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .about-hero h1 {
+            font-size: 42px;
+            color: #ff6f00;
+            margin-bottom: 10px;
+        }
+
+        .about-hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* CARDS */
+        .about-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 50px 10%;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.4s, box-shadow 0.4s;
+            animation: slideUp 1.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #ff6f00;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        /* MISSION SECTION */
+        .mission {
+            background: #ff6f00;
+            color: white;
+            padding: 60px 15%;
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+
+        .mission h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .mission p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
