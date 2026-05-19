@@ -1,0 +1,105 @@
+body {
+            background: linear-gradient(120deg, #fffde7, #fff3c4);
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        /* PRODUCT GRID */
+        .product-grid {
+            padding: 40px 8%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            animation: fadeUp 1.2s ease;
+        }
+
+        /* CARD */
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            transition: 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255,193,7,0.15), rgba(255,87,34,0.15));
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+        }
+
+        /* IMAGE */
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+            transition: 0.4s;
+            z-index: 1;
+            position: relative;
+        }
+
+        .card:hover img {
+            transform: scale(1.12) rotate(-2deg);
+        }
+
+        /* TEXT */
+        .card h3 {
+            margin: 12px 0 6px;
+            font-size: 17px;
+            color: #d84315;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #ff6f00;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* BUTTON */
+        .card button {
+            margin-top: 10px;
+            padding: 10px 22px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #ffb300, #ff6f00);
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, #ff6f00, #e65100);
+        }
+
+        /* ANIMATION */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }

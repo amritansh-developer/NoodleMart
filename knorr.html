@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Knorr Noodles</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="knorr.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <a href="../index.html">NoodleMart</a>
+    </div>
+    <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+    <div class="nav-icons">
+        <input type="text" id="searchBox" placeholder="Search noodles...">
+        <a href="../cart.html" class="cart-icon">🛒</a>
+        <a href="../account.html" class="user-icon" title="User Account">👤</a>
+    </div>
+</header>
+
+<div class="product-grid">
+
+    <div class="card">
+        <img src="../images/knorr/knorr1.jpg">
+        <h3>Knorr Soupy</h3>
+        <p>₹30</p>
+        <button onclick="addToCart('Knorr Soupy',30,'../images/knorr/knorr1.jpg')">Add</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/knorr/knorr2.jpg">
+        <h3>Knorr Veg</h3>
+        <p>₹28</p>
+        <button onclick="addToCart('Knorr Veg',28,'../images/knorr/knorr2.jpg')">Add</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/knorr/knorr3.jpg">
+        <h3>Knorr Classic</h3>
+        <p>₹26</p>
+        <button onclick="addToCart('Knorr Classic',26,'../images/knorr/knorr3.jpg')">Add</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/knorr/knorr4.jpg">
+        <h3>Knorr Masala</h3>
+        <p>₹32</p>
+        <button onclick="addToCart('Knorr Masala',32,'../images/knorr/knorr4.jpg')">Add</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/knorr/knorr5.jpg">
+        <h3>Knorr Hot</h3>
+        <p>₹34</p>
+        <button onclick="addToCart('Knorr Hot',34,'../images/knorr/knorr5.jpg')">Add</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/knorr/knorr6.jpg">
+        <h3>Knorr Family</h3>
+        <p>₹199</p>
+        <button onclick="addToCart('Knorr Family',55,'../images/knorr/knorr6.jpg')">Add</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/knorr/knorr7.jpg">
+        <h3>Knorr Garlic</h3>
+        <p>₹33</p>
+        <button onclick="addToCart('Knorr Garlic',33,'../images/knorr/knorr7.jpg')">Add</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/knorr/knorr8.jpg">
+        <h3>Knorr Tomato</h3>
+        <p>₹29</p>
+        <button onclick="addToCart('Knorr Tomato',29,'../images/knorr/knorr8.jpg')">Add</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/knorr/knorr9.jpg">
+        <h3>Knorr Jumbo</h3>
+        <p>₹60</p>
+        <button onclick="addToCart('Knorr Jumbo',60,'../images/knorr/knorr9.jpg')">Add</button>
+    </div>
+
+    <div class="card">
+        <img src="../images/knorr/knorr10.jpg">
+        <h3>Knorr Mini</h3>
+        <p>₹20</p>
+        <button onclick="addToCart('Knorr Mini',20,'../images/knorr/knorr10.jpg')">Add</button>
+    </div>
+
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>

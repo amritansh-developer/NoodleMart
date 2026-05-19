@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#fffaf3,#fff3e0);
+}
+
+/* NAVBAR */
+.navbar{
+    background:#ff9800;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:white;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+}
+
+.nav-icons{
+    display:flex;
+    gap:10px;
+}
+
+.nav-icons input{
+    padding:6px 10px;
+    border:none;
+    border-radius:6px;
+}
+
+.cart-icon{
+    font-size:22px;
+    text-decoration:none;
+}
+
+/* PRODUCTS */
+.product-grid{
+    padding:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+/* CARD WITH ANIMATION */
+.card{
+    background:white;
+    padding:18px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* SIMPLE HOVER LIFT */
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.18);
+}
+
+.card img{
+    width:100%;
+    max-height:180px;
+    object-fit:contain;
+    margin-bottom:12px;
+    transition:transform 0.3s ease;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+.card h3{
+    font-size:16px;
+    margin-bottom:6px;
+}
+
+.card p{
+    color:#ff6600;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* BUTTON SAME – JUST SMOOTH EFFECT */
+.card button{
+    background:linear-gradient(135deg,#ff9800,#ff5722);
+    border:none;
+    color:white;
+    padding:8px 18px;
+    border-radius:20px;
+    cursor:pointer;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card button:hover{
+    transform:scale(1.08);
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
